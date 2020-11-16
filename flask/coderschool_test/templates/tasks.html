@@ -1,0 +1,11 @@
+{% extends "layout.html" %}
+
+{% block body %}
+    <h1>Products</h1>
+    <ul>
+        {% for product in products %}
+            <li> {{ product[0] }}  <i>      giá bán: {{product[1]}} đồng </i> </li> 
+
+        {% endfor %}
+    </ul>
+{% endblock %}
